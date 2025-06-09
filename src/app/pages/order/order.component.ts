@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-order',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './order.component.html',
   styleUrl: './order.component.css'
 })
-export class OrderComponent {
+export class OrderComponent implements OnInit {
+  cocktailsGuardados: any[] = [];
 
+  ngOnInit() {
+    this.cocktailsGuardados = JSON.parse(localStorage.getItem('cocktails') || '[]');
+  }
 }
