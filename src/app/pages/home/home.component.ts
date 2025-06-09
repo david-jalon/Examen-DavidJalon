@@ -13,7 +13,7 @@ export class HomeComponent {
       nombre: 'Pizza Margarita',
       descripcion: 'Pizza clásica con tomate natural, mozzarella y albahaca fresca.',
       precio: 8.5,
-      imagen: 'assets/public/pizza-margarita.webp'
+      imagen: 'assets/public/pizza-margarita.png'
     },
     {
       nombre: 'Hamburguesa BBQ',
